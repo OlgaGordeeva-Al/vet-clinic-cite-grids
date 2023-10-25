@@ -1,4 +1,60 @@
 .header {
   grid-area: header;
+  display: grid;
+  grid-template-areas:
+    "logo contacts nav";
   background-color: #8ca0ff;
+  grid-template-columns: 0.5fr 2fr 2fr;
 }
+
+.logoBox{
+  grid-area: logo;
+
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.logoText {
+  font-size: 32px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+}
+
+.contacts {
+  grid-area: contacts;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.contacts-addres {
+  padding-left: 15px;
+}
+
+.contacts-addres > svg,
+.contacts-phone > svg {
+  transform: translateY(4px);
+  padding: 0 3px;
+}
+
+.navBar {
+  grid-area: nav;
+  margin-right: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navBar > a {
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navBar > a:hover {
+  color: #fff;
+}
+
