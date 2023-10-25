@@ -3,16 +3,15 @@ import Header from "./components/Header/Header"
 import Main from "./components/Main/Main"
 import Sidebar from "./components/Sidebar/Sidebar"
 import './App.css';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
+    <div className="page">
       <Header></Header>
-      <div className="page">
-        <Sidebar></Sidebar>
-        <Main></Main>
-      </div>
-
+      <Sidebar></Sidebar>
+      <Main></Main>
+      <Footer></Footer>
     </div>
   );
 }

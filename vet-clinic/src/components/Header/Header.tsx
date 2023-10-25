@@ -1,6 +1,14 @@
+import "./Header.css"
+
 function Header() {
     return (
-      <h1>Header</h1>
+      <div className="header">
+        <p>logo</p>
+        <p>about us</p>
+        <p>services</p>
+        <p>price list</p>
+        <p>contacs</p>
+      </div>
     );
   }
 

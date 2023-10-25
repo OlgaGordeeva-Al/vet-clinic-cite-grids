@@ -1,6 +1,8 @@
+import "./Sidebar.css"
+
 export function Sidebar() {
   return (
-    <ul>
+    <ul className="sidebar">
       <li>first</li>
       <li>second</li>
     </ul>
