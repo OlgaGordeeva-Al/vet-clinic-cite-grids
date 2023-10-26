@@ -1,10 +1,15 @@
 import "./Main.css"
+import Laboratory from "./Services/Laboratory/Laboratory";
+import Therapy from "./Services/Therapy/Therapy";
+import Ophtalmology from "./Services/Ophtalmology/Ophtalmology";
 
 function Main() {
     return (
-      <p className="main">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ut eos nesciunt sed vel a nam facilis. Corporis, exercitationem repellat. Ab dolore natus maiores delectus distinctio quia aut consequatur omnis.
-      </p>
+      <div className="main">
+        <Therapy></Therapy>
+        <Laboratory></Laboratory>
+        <Ophtalmology></Ophtalmology>
+      </div>
     );
   }
 

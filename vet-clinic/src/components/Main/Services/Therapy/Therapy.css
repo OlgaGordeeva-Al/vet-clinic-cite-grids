@@ -1,0 +1,22 @@
+.therapy {
+  display: grid;
+  grid-template-areas: 
+    "text image";
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    padding: 35px;
+}
+
+.therapy-image {
+  height: 100%;
+  width: 100%;
+}
+
+.therapy-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.therapy-text > p{
+  margin-top: 0;
+}

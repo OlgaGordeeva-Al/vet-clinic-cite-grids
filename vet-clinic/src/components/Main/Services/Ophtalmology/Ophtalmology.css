@@ -1,0 +1,8 @@
+.ophtalmology {
+  display: grid;
+  grid-template-areas: 
+    "text image";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 35px;
+}

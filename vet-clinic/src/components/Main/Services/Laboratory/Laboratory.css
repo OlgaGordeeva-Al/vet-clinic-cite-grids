@@ -1,0 +1,23 @@
+.lab-item {
+  display: grid;
+  grid-template-areas: 
+    "text image";
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    padding: 35px;
+}
+
+.lab-img {
+  height: 100%;
+  width: 100%;
+}
+
+.lab-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.lab-text > p{
+  margin-top: 0;
+}
+

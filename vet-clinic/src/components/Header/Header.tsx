@@ -46,13 +46,13 @@ function Header() {
           </span>
           <span className="contacts-addres">
             <svg height="20" viewBox="0 0 48 48" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M24 4c-7.73 0-14 6.27-14 14 0 10.5 14 26 14 26s14-15.5 14-26c0-7.73-6.27-14-14-14zm0 19c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/><path d="M0 0h48v48H0z" fill="none"/></svg>
-            SomePlace st. 20/45.
+            Some Place st. 20/45.
           </span>
         </div>
         <div className="navBar">
           <a>about us</a>
           <a>services</a>
-          <a>arice list</a>
+          <a>price list</a>
           <a>contacs</a>
         </div>
       </div>
