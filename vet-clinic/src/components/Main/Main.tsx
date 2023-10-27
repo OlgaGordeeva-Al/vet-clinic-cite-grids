@@ -4,6 +4,7 @@ import Therapy from "./Services/Therapy/Therapy";
 import Ophtalmology from "./Services/Ophtalmology/Ophtalmology";
 import Surgery from "./Services/Surgery/Surgery";
 import AboutUs from "./AboutUs";
+import Gallery from "../Gallery/Gallery";
 
 function Main() {
     return (
@@ -13,6 +14,7 @@ function Main() {
         <Surgery></Surgery>
         <Ophtalmology></Ophtalmology>
         <Laboratory></Laboratory>
+        <Gallery></Gallery>
       </div>
     );
   }
