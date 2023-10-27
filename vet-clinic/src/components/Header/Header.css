@@ -3,15 +3,19 @@
   display: grid;
   grid-template-areas:
     "logo contacts nav";
-  background-color: #8ca0ff;
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
+  fill: currentColor;
   grid-template-columns: 0.5fr 2fr 2fr;
 }
 
 .logoBox{
   grid-area: logo;
 
-  display: flex;
   align-items: center;
+  display: flex;
+  color: var(--white);
+  fill: currentColor;
   margin-left: 30px;
 }
 

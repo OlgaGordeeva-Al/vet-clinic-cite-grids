@@ -1,0 +1,22 @@
+.about {
+  display: grid;
+  grid-template-areas: 
+    "text image";
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    padding: 35px;
+}
+
+.about-img {
+  height: 100%;
+  width: 100%;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text > p{
+  margin-top: 0;
+}
