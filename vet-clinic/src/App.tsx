@@ -1,18 +1,53 @@
 import React from 'react';
-import Header from "./components/Header/Header"
-import Main from "./components/Main/Main"
-import Sidebar from "./components/Sidebar/Sidebar"
+import Main from "./components/Main/RootLayout"
 import './App.css';
-import Footer from './components/Footer/Footer';
+import Laboratory from "./components/Main/Services/Laboratory/Laboratory";
+import Therapy from "./components/Main/Services/Therapy/Therapy";
+import Ophtalmology from "./components/Main/Services/Ophtalmology/Ophtalmology";
+import Surgery from "./components/Main//Services/Surgery/Surgery";
+import AboutUs from "./components/Main/AboutUs";
+import Gallery from "./components/Gallery/Gallery";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Main />,
+    children: [
+      {
+        path: "/",
+        element: <AboutUs />,
+      },
+      {
+        path: "/therapy",
+        element: <Therapy />,
+      },
+      {
+        path: "/surgery",
+        element: <Surgery />,
+      },
+      {
+        path: "/ophtalmology",
+        element: <Ophtalmology />,
+      },
+      {
+        path: "/laboratory",
+        element: <Laboratory />,
+      },
+      {
+        path: "/gallery",
+        element: <Gallery />,
+      },
+    ]
+  },
+]);
 
 function App() {
   return (
-    <div className="page">
-      <Header></Header>
-      <Sidebar></Sidebar>
-      <Main></Main>
-      <Footer></Footer>
-    </div>
+      <RouterProvider router={router} />
   );
 }
 
