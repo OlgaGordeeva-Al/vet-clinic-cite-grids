@@ -1,4 +1,13 @@
 import "./Header.css"
+import Select from "../UI/Select"
+import Link, { Router } from "react-router-dom"
+
+const pagesOptions = [
+  { name: "Therapy", val: "Therapy"},
+  { name: "Surgery", val: "Surgery"},
+  { name: "Laboratory", val: "Laboratory"},
+  { name: "Ophtalmology", val: "Ophtalmology"},
+];
 
 function Header() {
     return (
@@ -50,10 +59,10 @@ function Header() {
           </span>
         </div>
         <div className="navBar">
-          <a>about us</a>
-          <a>services</a>
-          <a>price list</a>
-          <a>contacs</a>
+            {/* <Link to="/">about us</Link> */}
+            {/* <Select options={ pagesOptions }/> */}
+            <a>price list</a>
+            <a>contacs</a>
         </div>
       </div>
     );
