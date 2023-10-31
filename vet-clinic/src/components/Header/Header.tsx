@@ -1,15 +1,14 @@
 import "./Header.css"
 import Select from "../UI/Select"
-import Link, { Router } from "react-router-dom"
-
-const pagesOptions = [
-  { name: "Therapy", val: "Therapy"},
-  { name: "Surgery", val: "Surgery"},
-  { name: "Laboratory", val: "Laboratory"},
-  { name: "Ophtalmology", val: "Ophtalmology"},
-];
+import { Link } from "react-router-dom"
 
 function Header() {
+  const pagesOptions = [
+    { name: "Therapy", val: "/therapy"},
+    { name: "Surgery", val: "/surgery"},
+    { name: "Laboratory", val: "/laboratory"},
+    { name: "Ophtalmology", val: "/ophtalmology"},
+  ];
     return (
       <div className="header">
         <div className="logoBox">
@@ -59,8 +58,8 @@ function Header() {
           </span>
         </div>
         <div className="navBar">
-            {/* <Link to="/">about us</Link> */}
-            {/* <Select options={ pagesOptions }/> */}
+            <a href="/">about us</a>
+            <Select options={pagesOptions}/>
             <a>price list</a>
             <a>contacs</a>
         </div>
