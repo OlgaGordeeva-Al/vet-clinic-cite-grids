@@ -1,13 +1,13 @@
 import "./Header.css"
-import Select from "../UI/Select"
+import Dropdown from "../UI/Dropdown"
 import { Link } from "react-router-dom"
 
 function Header() {
-  const pagesOptions = [
-    { name: "Therapy", val: "/therapy"},
-    { name: "Surgery", val: "/surgery"},
-    { name: "Laboratory", val: "/laboratory"},
-    { name: "Ophtalmology", val: "/ophtalmology"},
+  const pagesItems = [
+    { name: "Therapy", link: "/therapy"},
+    { name: "Surgery", link: "/surgery"},
+    { name: "Laboratory", link: "/laboratory"},
+    { name: "Ophtalmology", link: "/ophtalmology"},
   ];
     return (
       <div className="header">
@@ -58,10 +58,10 @@ function Header() {
           </span>
         </div>
         <div className="navBar">
-            <a href="/">about us</a>
-            <Select options={pagesOptions}/>
+            <Link to="/">about us</Link>
+            <Dropdown items={pagesItems} dropdownName="services"/>
             <a>price list</a>
-            <a>contacs</a>
+            <Link to="/">contacs</Link>
         </div>
       </div>
     );

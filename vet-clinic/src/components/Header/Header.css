@@ -55,6 +55,11 @@
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.navBar > a:visited {
+  color: inherit;
 }
 
 .navBar > a:hover {
