@@ -7,6 +7,7 @@ import Ophtalmology from "./components/Main/Services/Ophtalmology/Ophtalmology";
 import Surgery from "./components/Main//Services/Surgery/Surgery";
 import AboutUs from "./components/Main/AboutUs";
 import Gallery from "./components/Gallery/Gallery";
+import ContactPage from "./components/Main/ContactPage"
 import {
   createBrowserRouter,
   RouterProvider,
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/gallery",
         element: <Gallery />,
+      },
+      {
+        path: "/contacts",
+        element: <ContactPage />,
       },
     ]
   },

@@ -61,7 +61,7 @@ function Header() {
             <Link to="/">about us</Link>
             <Dropdown items={pagesItems} dropdownName="services"/>
             <a>price list</a>
-            <Link to="/">contacs</Link>
+            <Link to="/contacts">contacs</Link>
         </div>
       </div>
     );
