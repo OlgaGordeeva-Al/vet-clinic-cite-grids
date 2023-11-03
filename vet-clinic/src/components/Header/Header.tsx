@@ -62,6 +62,7 @@ function Header() {
             <Dropdown items={pagesItems} dropdownName="services"/>
             <a>price list</a>
             <Link to="/contacts">contacs</Link>
+            <Link to="/gallery">gallery</Link>
         </div>
       </div>
     );
