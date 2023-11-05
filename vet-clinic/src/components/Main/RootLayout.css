@@ -23,6 +23,11 @@
   width: 60vw;
   height: 80vh;
   border-radius: 5px;
+  overflow: hidden;
+}
+
+.modal::backdrop {
+  background-color: #2a2929d8;
 }
 
 .dialog-image {
@@ -42,6 +47,11 @@
   cursor: pointer;
   border-style: none;
   background-color: transparent;
+}
+
+.close-button:hover,
+.close-button:active {
+  border-style: none;
 }
 
 .sr-only {

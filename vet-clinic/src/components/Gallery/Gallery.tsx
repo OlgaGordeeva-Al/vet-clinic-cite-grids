@@ -23,7 +23,7 @@ const imagesArr = [
 function Gallery() {
    const [open, setOpen] = useState(false);
    const [dialogContent, setDialogContent] = useState("");
-   const dialog = useRef();
+   const dialog = useRef<HTMLDialogElement>(null);;
 
    const galleryContent = imagesArr.map((item, index) => <img onClick={handleClick} key={item} src={item} alt={"lab-photo" + index} className={"gallery-item-image  gallery-item-" + (index + 1)} />)
 
