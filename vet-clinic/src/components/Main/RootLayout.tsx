@@ -7,7 +7,7 @@ import Footer from '../Footer/Footer';
 
 function Main() {
     return (
-      <div className="page">
+      <div className="page" id="page">
         <Header />
         <Sidebar />
         <div className="main">

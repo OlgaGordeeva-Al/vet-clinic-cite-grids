@@ -1,18 +1,17 @@
-import { useState } from 'react';
-// import { createPortal } from 'react-dom';
+import { useRef, useState } from 'react';
 
 interface Props {
   imageSrc?: string;
   openDialog: boolean
-  closeHandler: any;
+  closeHandler: any
 }
 
 const Dialog = (props: Props) => {
-
+  const modalRef = useRef<HTMLDialogElement | null>(null);
   return (
-    <dialog className='modal' open={props.openDialog}>
-     <button type='button' onClick={ props.closeHandler }>close</button>
-     <img src={ props.imageSrc } alt="someImage" />
+    <dialog ref={modalRef} className="modal" open={props.openDialog}>
+      <button className="close-button" type="button" onClick={props.closeHandler}><span className="sr-only">Close</span></button>
+      <img src={ props.imageSrc } className="dialog-image" alt="someImage" />
     </dialog>
   )
 }

@@ -1,6 +1,7 @@
 import "./Gallery.css"
 import Dialog from "../UI/Modal";
 import { useState, useRef } from 'react';
+import { createPortal } from 'react-dom';
 
 const imagesArr = [
   "https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?auto=format&fit=crop&q=80&w=2487&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -22,8 +23,14 @@ const imagesArr = [
 function Gallery() {
    const [open, setOpen] = useState(false);
    const [dialogContent, setDialogContent] = useState("");
+   const dialog = useRef();
 
    const galleryContent = imagesArr.map((item, index) => <img onClick={handleClick} key={item} src={item} alt={"lab-photo" + index} className={"gallery-item-image  gallery-item-" + (index + 1)} />)
+
+   const el = document.getElementById(
+      "page",
+    ) as HTMLElement;
+
 
    function handleClick(event: any) {
     setDialogContent((dialogContent) => dialogContent = event.target.src)
@@ -36,8 +43,8 @@ function Gallery() {
 
     return (
       <>
-        <Dialog openDialog={open} closeHandler={handleClose} imageSrc={dialogContent}></Dialog>
-        <div className="gallery">
+        <div className="gallery" id="gallery">
+          <Dialog openDialog={open} closeHandler={handleClose} imageSrc={dialogContent}></Dialog>
           { galleryContent }
         </div>
       </>
