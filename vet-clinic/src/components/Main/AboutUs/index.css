@@ -1,15 +1,20 @@
 .about {
   display: grid;
   grid-template-areas: 
-    "text image";
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 20px;
-    padding: 35px;
+    "text image"
+    "departments  departments";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(max-content);
+  grid-gap: 20px;
+  padding: 35px;
 }
 
 .about-img {
   height: 100%;
   width: 100%;
+  animation: fadeIn 1s;
+  margin-top: 20px;
+  box-shadow: 0px 8px 20px 8px rgba(0,0,0,0.2);
 }
 
 .about-text {
@@ -17,6 +22,27 @@
   flex-direction: column;
 }
 
+.about-text__head {
+  font-size: 18px;
+  font-weight: 600px;
+  color: #146C94;
+}
+
+.departments-head {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
 .about-text > p{
   margin-top: 0;
+}
+
+.about-services {
+  grid-area: departments;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  margin: 50px 30px;
+  padding-bottom: 50px;
 }

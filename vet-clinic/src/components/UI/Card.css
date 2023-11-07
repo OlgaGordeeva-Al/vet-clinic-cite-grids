@@ -1,0 +1,21 @@
+.card {
+  display: grid;
+  place-items: center;
+}
+
+.card-image {
+  height: 70px;
+  width: 70px;
+  place-self: center;
+}
+
+.card-header {
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: 600;
+  align-self: center;
+}
+
+.card-description {
+  margin-top: 0;
+}

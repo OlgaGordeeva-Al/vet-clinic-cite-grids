@@ -9,17 +9,27 @@
   grid-template-columns: 0.5fr 2fr 2fr;
 }
 
-.logoBox{
+.logo-box{
   grid-area: logo;
+  margin-left: 30px;
+  align-items: center;
+  display: flex;
+}
 
+.logo-box__link {
   align-items: center;
   display: flex;
   color: var(--white);
   fill: currentColor;
-  margin-left: 30px;
+  text-decoration: none;
 }
 
-.logoText {
+.logo-box__link:active
+.logo-box__link:visited {
+  color: currentColor;
+}
+
+.logo-text {
   font-size: 32px;
   font-weight: 400;
   margin: 0;
