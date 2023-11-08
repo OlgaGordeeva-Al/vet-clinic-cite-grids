@@ -1,4 +1,4 @@
-import "./Header.css"
+import "./index.css"
 import Dropdown from "../UI/Dropdown"
 import { Link } from "react-router-dom"
 
@@ -61,7 +61,7 @@ function Header() {
         </div>
         <div className="navBar">
             <Link to="/">about us</Link>
-            <Dropdown items={pagesItems} dropdownName="services"/>
+            <Dropdown items={pagesItems} dropdownName="departments"/>
             <a>price list</a>
             <Link to="/contacts">contacs</Link>
             <Link to="/gallery">gallery</Link>

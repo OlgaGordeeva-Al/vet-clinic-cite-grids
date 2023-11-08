@@ -1,4 +1,4 @@
-import "./Gallery.css"
+import "./index.css"
 import Dialog from "../UI/Modal";
 import { useState, useRef } from 'react';
 import { createPortal } from 'react-dom';

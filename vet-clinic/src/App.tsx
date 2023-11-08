@@ -6,7 +6,7 @@ import Therapy from "./components/Main/Services/Therapy/Therapy";
 import Ophtalmology from "./components/Main/Services/Ophtalmology/Ophtalmology";
 import Surgery from "./components/Main//Services/Surgery/Surgery";
 import AboutUs from "./components/Main/AboutUs";
-import Gallery from "./components/Gallery/Gallery";
+import Gallery from "./components/Gallery";
 import ContactPage from "./components/Main/ContactPage"
 import {
   createBrowserRouter,

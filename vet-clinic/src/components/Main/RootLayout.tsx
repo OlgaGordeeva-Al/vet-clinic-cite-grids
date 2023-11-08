@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
 import "./RootLayout.css"
 import "../../App.css";
-import Header from "../Header/Header"
-import Sidebar from "../Sidebar/Sidebar"
-import Footer from '../Footer/Footer';
+import Header from "../Header"
+import Sidebar from "../Sidebar"
+import Footer from '../Footer';
 
 function Main() {
     return (
