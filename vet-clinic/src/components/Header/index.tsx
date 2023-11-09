@@ -62,7 +62,7 @@ function Header() {
         <div className="navBar">
             <Link to="/">about us</Link>
             <Dropdown items={pagesItems} dropdownName="departments"/>
-            <a>price list</a>
+            <Link to="/price-list">price list</Link>
             <Link to="/contacts">contacs</Link>
             <Link to="/gallery">gallery</Link>
         </div>

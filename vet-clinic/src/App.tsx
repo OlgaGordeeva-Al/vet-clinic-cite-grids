@@ -7,6 +7,7 @@ import Ophtalmology from "./components/Main/Services/Ophtalmology/Ophtalmology";
 import Surgery from "./components/Main//Services/Surgery/Surgery";
 import AboutUs from "./components/Main/AboutUs";
 import Gallery from "./components/Gallery";
+import PriceList from "./components/Main/PriceList";
 import ContactPage from "./components/Main/ContactPage"
 import {
   createBrowserRouter,
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "/contacts",
         element: <ContactPage />,
+      },
+      {
+        path: "/price-list",
+        element: <PriceList />,
       },
     ]
   },
