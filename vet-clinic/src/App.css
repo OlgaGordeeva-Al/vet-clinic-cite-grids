@@ -11,3 +11,8 @@ img {
   animation: fadeIn 1s;
 }
 
+.page-header {
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--dark-blue);
+}

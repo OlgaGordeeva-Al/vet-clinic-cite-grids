@@ -1,0 +1,14 @@
+.price-page {
+  margin: 30px;
+}
+
+.price-page__header {
+  display: flex;
+  justify-content: center;
+}
+
+.price-page__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}

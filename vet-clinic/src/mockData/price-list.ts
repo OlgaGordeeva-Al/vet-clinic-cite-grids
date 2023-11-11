@@ -11,15 +11,15 @@ export const priceList = [
         price: 10
       },
       {
-        name: "vaccination against rabies",
+        name: "Vaccination against rabies",
         price: 50
       },
       {
-        name: "complex vaccination",
+        name: "Complex vaccination",
         price: 50
       },
       {
-        name: "antiparasitic treatment",
+        name: "Antiparasitic treatment",
         price: 20
       },
       {
@@ -70,7 +70,7 @@ export const priceList = [
     ],
   },
   {
-    cardName: "Optalmology",
+    cardName: "Opthalmology",
     values :  [
       {
         name: "Physical Exams",
