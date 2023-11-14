@@ -1,9 +1,11 @@
-import "./Surgery.css"
+import "./Ophtalmology.css"
 
-function Surgery() {
+function Ophtalmology() {
     return (
-      <div className="surgery">
+      <div className="ophtalmology">
+        <img src="images\pexels-gustavo-fring-6816861.jpg" alt="ophtalmology_photo" className="therapy-image" />
         <div className="therapy-text">
+          <h4 className="page-header">We glad to see you and your pets every day</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quae rerum sint, laboriosam officia iusto illo exercitationem dolore dolorum quidem, quas commodi minima pariatur ad corporis facere saepe perspiciatis laudantium:
           </p>
@@ -11,9 +13,8 @@ function Surgery() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quae rerum sint, laboriosam officia iusto illo exercitationem dolore dolorum quidem, quas commodi minima pariatur ad corporis facere saepe perspiciatis laudantium:
           </p>
         </div>
-        <img src="images\pexels-gustavo-fring-6816857.jpg" alt="ophtalmology_photo" className="therapy-image" />
       </div>
     );
   }
 
-  export default Surgery;
+export default Ophtalmology ;

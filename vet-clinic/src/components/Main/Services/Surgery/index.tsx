@@ -1,10 +1,10 @@
-import "./Therapy.css"
+import "./Surgery.css"
 
-function Therapy() {
+function Surgery() {
     return (
-      <div className="therapy">
-        <img src="images\pexels-sam-lion-5731861.jpg" alt="therapy_photo" className="therapy-image" />
+      <div className="surgery">
         <div className="therapy-text">
+          <h4 className="page-header">We have hight qualified specialists</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quae rerum sint, laboriosam officia iusto illo exercitationem dolore dolorum quidem, quas commodi minima pariatur ad corporis facere saepe perspiciatis laudantium:
           </p>
@@ -12,8 +12,9 @@ function Therapy() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quae rerum sint, laboriosam officia iusto illo exercitationem dolore dolorum quidem, quas commodi minima pariatur ad corporis facere saepe perspiciatis laudantium:
           </p>
         </div>
+        <img src="images\pexels-gustavo-fring-6816857.jpg" alt="ophtalmology_photo" className="therapy-image" />
       </div>
     );
   }
 
-export default Therapy ;
+  export default Surgery;

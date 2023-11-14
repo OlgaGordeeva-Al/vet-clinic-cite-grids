@@ -1,10 +1,10 @@
 import React from 'react';
-import Main from "./components/Main/RootLayout"
+import Main from "./components/Main/RootLayout/RootLayout"
 import './App.css';
-import Laboratory from "./components/Main/Services/Laboratory/Laboratory";
-import Therapy from "./components/Main/Services/Therapy/Therapy";
-import Ophtalmology from "./components/Main/Services/Ophtalmology/Ophtalmology";
-import Surgery from "./components/Main//Services/Surgery/Surgery";
+import Laboratory from "./components/Main/Services/Laboratory";
+import Therapy from "./components/Main/Services/Therapy";
+import Ophtalmology from "./components/Main/Services/Ophtalmology";
+import Surgery from "./components/Main/Services/Surgery";
 import AboutUs from "./components/Main/AboutUs";
 import Gallery from "./components/Gallery";
 import PriceList from "./components/Main/PriceList";

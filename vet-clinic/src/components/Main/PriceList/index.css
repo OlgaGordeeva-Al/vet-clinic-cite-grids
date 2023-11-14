@@ -1,5 +1,5 @@
 .price-page {
-  margin: 30px;
+  margin: 0 60px;
 }
 
 .price-page__header {
@@ -9,6 +9,7 @@
 
 .price-page__content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
 }

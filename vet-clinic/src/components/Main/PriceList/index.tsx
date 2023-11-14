@@ -7,7 +7,7 @@ const PricePage = priceList.map((item) => <CardList cardContent={item} />)
 
   return (
     <div className="price-page">
-      <h3 className="page-header price-page__header">Our prices</h3>
+      <h4 className="page-header price-page__header">Our prices</h4>
       <div className="price-page__content">
         {PricePage}
       </div>

@@ -14,7 +14,8 @@
 .main {
   grid-area: main;
   background-color: var(--white);
-  margin: 0;
+  padding: 40px 30px;
+  height: max-content;
 }
 
 .modal {

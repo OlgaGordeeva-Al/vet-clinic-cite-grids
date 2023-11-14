@@ -1,10 +1,11 @@
-import "./Ophtalmology.css"
+import "./Therapy.css"
 
-function Ophtalmology() {
+function Therapy() {
     return (
-      <div className="ophtalmology">
-        <img src="images\pexels-gustavo-fring-6816861.jpg" alt="ophtalmology_photo" className="therapy-image" />
+      <div className="therapy">
+        <img src="images\pexels-sam-lion-5731861.jpg" alt="therapy_photo" className="therapy-image" />
         <div className="therapy-text">
+          <h4 className="page-header">We glad to see you and your pets daily!</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quae rerum sint, laboriosam officia iusto illo exercitationem dolore dolorum quidem, quas commodi minima pariatur ad corporis facere saepe perspiciatis laudantium:
           </p>
@@ -16,4 +17,4 @@ function Ophtalmology() {
     );
   }
 
-export default Ophtalmology ;
+export default Therapy ;

@@ -4,7 +4,6 @@
     "text image";
     grid-template-columns: 2fr 1fr;
     grid-gap: 20px;
-    padding: 35px;
 }
 
 .lab-img {
