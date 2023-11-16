@@ -14,14 +14,14 @@ Plans for future:
   - Add some tests
 
 
-<div style="display:flex; justify-content:space-around;">
+<div style="display:flex; justify-content:center;">
   <figure style="display: flex; flex-direction: column;">
-    <img src="vet-clinic\public\images\gallery.png" width = 350 style="display: inline-block;"/>
-    <div style="width: 350px;">Gallery demo</div>
+    <p>Gallery demo</p>
+    <img src="vet-clinic\public\images\gallery.png" width = 500 style="display: inline-block;"/>
   </figure>
   <figure style="display: flex; flex-direction: column;">
-    <img src="vet-clinic\public\images\contacts.png" title="Contacts demo" width = 350 style="display: inline-block;"/>
-    <div style="width: 350px;">Contacts demo</div>
+    <p>Contacts demo</p>
+    <img src="vet-clinic\public\images\contacts.png" title="Contacts demo" width = 500 style="display: inline-block;"/>
   </figure>
 </div>
 
