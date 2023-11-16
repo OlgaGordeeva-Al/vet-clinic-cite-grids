@@ -17,11 +17,11 @@ Plans for future:
 <div style="display:flex; justify-content:space-around;">
   <figure style="display: flex; flex-flow: column;">
     <img src="vet-clinic\public\images\gallery.png" width = 400 style="display: inline-block;"/>
-    <figcaption>Gallery demo</figcaption>
+    <div>Gallery demo</div>
   </figure>
   <figure style="display: flex; flex-flow: column;">
     <img src="vet-clinic\public\images\contacts.png" title="Contacts demo" width = 400 style="display: inline-block;"/>
-    <figcaption>Contacts demo</figcaption>
+    <div>Contacts demo</div>
   </figure>
 </div>
 
