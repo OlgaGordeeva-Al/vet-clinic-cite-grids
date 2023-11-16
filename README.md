@@ -14,5 +14,5 @@ Plans for future:
   - Add some tests
 
 
-  ![Gallery page](images/gallery.jpg)
+  ![Gallery page](vet-clinic\public\images\contacts.png)
   ![Contact page](images/contact.jpg)
