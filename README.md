@@ -15,7 +15,7 @@ Plans for future:
 
 
 <div style="display:flex; justify-content:center;">
-  <figure style="display: flex; flex-direction: column;">
+  <figure style="display: flex; flex-direction: column; margin:20px 0;">
     <p>Gallery demo</p>
     <img src="vet-clinic\public\images\gallery.png" width = 500 style="display: inline-block;"/>
   </figure>
