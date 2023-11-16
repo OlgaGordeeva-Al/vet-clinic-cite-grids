@@ -1,3 +1,18 @@
 # vet-clinic-cite-grids
 
-Simple cite of vet clinic on TypeScript with clean CSS and grids.
+Simple SPA of vet clinic on TypeScript with clean CSS and grids.
+
+Used stack: 
+ - ReactJS
+ - React Router
+ - Typescript
+ - CSS
+
+Plans for future: 
+  - Backend NodeJS
+  - Adaptive styles for all pages.
+  - Add some tests
+
+
+  ![Gallery page](images/gallery.jpg)
+  ![Contact page](images/contact.jpg)

@@ -3,15 +3,41 @@
   display: grid;
   background-color: var(--blue);
   color: var(--white);
-  grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: 20px 20px; */
+  grid-template-columns: repeat(2, max-content);
   grid-gap: 10px;
-  padding: 10px 0;
+  padding: 10px 30px;
+  place-content: space-between;
+  height: fit-content;
 }
 
-.footer-list {
+.footer-text {
+  font-size: 24px;
+  display: grid;
+  grid-template-columns: min-content auto min-content;
+}
+
+.footer-icon {
+  height: 40px;
+  width: 40px;
+  fill: var(--white);
+  margin: 20px 10px;
+}
+
+.footer-nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: end;
+  align-items: center;
+}
+
+.footer-nav a {
+  padding: 10px 5px;
+  font-size: 18px;
+}
+
+.footer-nav a:after {
+  content: "|";
+  color: #d9e2e5;
+  margin: 0 8px;
 }
 
 .footer-copyright {

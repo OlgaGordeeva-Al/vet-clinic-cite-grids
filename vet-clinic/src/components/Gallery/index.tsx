@@ -37,8 +37,11 @@ function Gallery() {
     return (
       <>
         <div className="gallery" id="gallery">
+          <h4 className="page-header">Our adorable patients</h4>
           <Dialog openDialog={open} closeHandler={handleClose} imageSrc={dialogContent}></Dialog>
-          { galleryContent }
+          <div className="gallery-items">
+            { galleryContent }
+          </div>
         </div>
       </>
     );

@@ -18,3 +18,16 @@ img {
   margin-top: 0;
   margin-bottom: 30px;
 }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: #fff;
+}
