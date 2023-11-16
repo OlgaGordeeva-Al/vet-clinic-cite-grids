@@ -1,6 +1,6 @@
 # vet-clinic-cite-grids
 
-#Simple SPA of vet clinic on TypeScript with clean CSS and grids.
+# Simple SPA of vet clinic on TypeScript with clean CSS and grids.
 
 Used stack: 
  - ReactJS
@@ -13,7 +13,7 @@ Plans for future:
   - Adaptive styles for all pages.
   - Add some tests
 
-#Temporary demo screenshots
+# Temporary demo screenshots
 
 <div style="display:flex; justify-content:center;">
   <figure style="display: flex; flex-direction: column; margin: 20px 0;">
