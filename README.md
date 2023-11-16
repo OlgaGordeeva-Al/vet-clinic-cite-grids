@@ -13,7 +13,11 @@ Plans for future:
   - Adaptive styles for all pages.
   - Add some tests
 
-  <img src="vet-clinic\public\images\gallery.png" title="Gallery demo" width = 300 style="display: block; margin: 0;" />
 
-  <img src="vet-clinic\public\images\contacts.png" title="Contacts demo" width = 300 style="display: block; margin: 0;" />
+<div style="display:flex; margin: 0;" >
+<img src="vet-clinic\public\images\gallery.png" title="Gallery demo" width = 300 style="display: inline-block; margin: 0;" />
+
+  <img src="vet-clinic\public\images\contacts.png" title="Contacts demo" width = 300 style="display: inline-block; margin: 0;" />
+</div>
+
 
