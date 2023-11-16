@@ -12,7 +12,6 @@ Plans for future:
   - Backend NodeJS
   - Adaptive styles for all pages.
   - Add some tests
-
-
-  ![Gallery page](vet-clinic\public\images\contacts.png)
+  
+  <img src="vet-clinic\public\images\contacts.png" width = 200 />
   ![Contact page](gallery.png)
