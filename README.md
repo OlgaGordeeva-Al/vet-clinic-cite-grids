@@ -15,4 +15,4 @@ Plans for future:
 
 
   ![Gallery page](vet-clinic\public\images\contacts.png)
-  ![Contact page](images/contact.jpg)
+  ![Contact page](gallery.png)
