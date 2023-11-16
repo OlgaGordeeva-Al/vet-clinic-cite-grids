@@ -14,10 +14,15 @@ Plans for future:
   - Add some tests
 
 
-<div style="display:flex; margin: 0;" >
-<img src="vet-clinic\public\images\gallery.png" title="Gallery demo" width = 300 style="display: inline-block; margin: 0;" />
-
-  <img src="vet-clinic\public\images\contacts.png" title="Contacts demo" width = 300 style="display: inline-block; margin: 0;" />
+<div style="display:flex; justify-content:space-around">
+  <figure>
+    <img src="vet-clinic\public\images\gallery.png" width = 400 style="display: inline-block;/>
+    <figcaption>Gallery demo</figcaption>
+  </figure>
+  <figure>
+    <img src="vet-clinic\public\images\contacts.png" title="Contacts demo" width = 400 style="display: inline-block; />
+    <figcaption>Contacts demo</figcaption>
+  </figure>
 </div>
 
 
