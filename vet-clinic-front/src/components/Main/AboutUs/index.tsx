@@ -15,7 +15,7 @@ function AboutUs() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quae rerum sint, laboriosam officia iusto illo exercitationem dolore dolorum quidem, quas commodi minima pariatur ad corporis facere saepe perspiciatis laudantium:
             </p>
           </div>
-          <img src="images\cat-about.jpg" alt="cat" className="about-img" />
+          <img src="images/cat-about.jpg" alt="cat" className="about-img" />
         </div>
         <div className="departments-head">
           <h4 className="page-header">
