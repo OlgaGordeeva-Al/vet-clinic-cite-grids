@@ -4,7 +4,7 @@ import Card from "../../UI/Card"
 
 
 function AboutUs() {
-  const cardBlock = servicesData.map(item => <Card cardImage={item.svg} cardHeader={item.header} cardDescription={item.text}></Card>)
+  const cardBlock = servicesData.map(item => <Card key={item.svg} cardImage={item.svg} cardHeader={item.header} cardDescription={item.text}></Card>)
 
     return (
       <>

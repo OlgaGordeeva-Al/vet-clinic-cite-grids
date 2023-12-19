@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Main from "./components/Main/RootLayout/RootLayout"
 import './App.css';
 import Laboratory from "./components/Main/Services/Laboratory";
@@ -13,6 +13,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,20 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/api/');
+        const data = await response.json();
+        console.log(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+  
+    fetchData();
+  }, []);
+
   return (
       <RouterProvider router={router} />
   );

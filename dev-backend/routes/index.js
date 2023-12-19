@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const { serviceData } = require('../models/about-page-data');
+const serviceData = require('../models/about-page-data');
 
 
 router.get('/', (req, res) => {
-  console.log('main page request')
+  console.log(serviceData);
   res.send(serviceData);
 });
 
