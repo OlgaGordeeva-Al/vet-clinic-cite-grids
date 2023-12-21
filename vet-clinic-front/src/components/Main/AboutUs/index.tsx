@@ -14,11 +14,6 @@ function AboutUs() {
   const [services, setData] = useState<ServiceData[]>([]);
   const [error, setError] = useState<string | null>(null);
 
-  // async function fetchData(): Promise<ServiceData[]> {
-  //   const response = await fetch('/api/');
-  //   const data = await response.json();
-  //   return data.servisesData;
-  // }
 
   useEffect(() => {
   async function fetchData() {
