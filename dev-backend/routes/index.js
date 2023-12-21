@@ -5,7 +5,7 @@ const serviceData = require('../models/about-page-data');
 
 router.get('/', (req, res) => {
   console.log(serviceData);
-  res.send(serviceData);
+  res.send(serviceData.servicesData);
 });
 
 

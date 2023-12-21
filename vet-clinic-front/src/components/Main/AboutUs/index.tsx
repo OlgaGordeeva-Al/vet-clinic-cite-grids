@@ -1,11 +1,41 @@
 import "./index.css"
-import { servicesData } from "../../../mockData/about-page-data"
 import Card from "../../UI/Card"
+import { useState, useEffect } from "react";
+
+interface ServiceData {
+  svg: string;
+  header: string;
+  text: string;
+}
 
 
 function AboutUs() {
-  const cardBlock = servicesData.map(item => <Card key={item.svg} cardImage={item.svg} cardHeader={item.header} cardDescription={item.text}></Card>)
 
+  const [services, setData] = useState<ServiceData[]>([]);
+  const [error, setError] = useState<string | null>(null);
+
+  // async function fetchData(): Promise<ServiceData[]> {
+  //   const response = await fetch('/api/');
+  //   const data = await response.json();
+  //   return data.servisesData;
+  // }
+
+  useEffect(() => {
+  async function fetchData() {
+    try {
+      const response = await fetch('/api/');
+      const data: ServiceData[] = await response.json();
+      setData(data);
+    } catch (error: any) {
+      setError(error.message);
+    }
+  }
+  fetchData();
+  }, []);
+
+
+  const cardBlock = services.map(item => <Card key={item.svg} cardImage={item.svg} cardHeader={item.header} cardDescription={item.text}></Card>)
+  
     return (
       <>
         <div className="about">
