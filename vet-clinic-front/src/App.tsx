@@ -57,7 +57,21 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-   return (
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch('/api/');
+  //       const data = await response.json();
+  //       console.log(data);
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   };
+  
+  //   fetchData();
+  // }, []);
+
+  return (
       <RouterProvider router={router} />
   );
 }

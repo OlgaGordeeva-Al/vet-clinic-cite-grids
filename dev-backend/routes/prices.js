@@ -4,8 +4,8 @@ const  priceList = require('../models/price-list');
 
 
 router.get('/', (req, res) => {
-  console.log('prices')
-  res.send(priceList);
+  console.log(priceList)
+  res.send(priceList.priceList);
 });
 
 
