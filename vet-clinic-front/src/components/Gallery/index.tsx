@@ -1,6 +1,7 @@
 import "./index.css"
 import Dialog from "../UI/Modal";
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 
 const imagesArr = [
   "https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?auto=format&fit=crop&q=80&w=2487&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -38,7 +39,10 @@ function Gallery() {
       <>
         <div className="gallery" id="gallery">
           <h4 className="page-header">Our adorable patients</h4>
-          <Dialog openDialog={open} closeHandler={handleClose} imageSrc={dialogContent}></Dialog>
+          {createPortal(
+           <Dialog openDialog={open} closeHandler={handleClose} imageSrc={dialogContent} />,
+            document.body
+          )}
           <div className="gallery-items">
             { galleryContent }
           </div>
