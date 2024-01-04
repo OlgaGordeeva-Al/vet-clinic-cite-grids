@@ -1,6 +1,6 @@
 import "./index.css"
 import Dropdown from "../UI/Dropdown"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 function Header() {
   const pagesItems = [
@@ -12,7 +12,7 @@ function Header() {
     return (
       <div className="header">
         <div className="logo-box">
-          <Link className="logo-box__link" to="/">
+          <NavLink className="logo-box__link" to="/">
             <svg height="40px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <g>
                 <g>
@@ -46,7 +46,7 @@ function Header() {
               </g>
             </svg>
             <p className="logo-text">VetPet</p>
-          </Link>
+          </NavLink>
         </div>
         <div className="contacts">
           <span className="contacts-phone">
@@ -60,11 +60,11 @@ function Header() {
           </span>
         </div>
         <div className="navBar">
-            <Link to="/">about us</Link>
+            <NavLink to="/">about us</NavLink>
             <Dropdown items={pagesItems} dropdownName="departments"/>
-            <Link to="/price-list">price list</Link>
-            <Link to="/contacts">contacs</Link>
-            <Link to="/gallery">gallery</Link>
+            <NavLink to="/price-list">price list</NavLink>
+            <NavLink to="/contacts">contacs</NavLink>
+            <NavLink to="/gallery">gallery</NavLink>
         </div>
       </div>
     );
