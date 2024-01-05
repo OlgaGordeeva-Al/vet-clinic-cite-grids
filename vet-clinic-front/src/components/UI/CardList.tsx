@@ -19,11 +19,27 @@ const CardList = (props: CardProps) => {
   const listItems = props.cardContent?.values
   const listHeader = props.cardContent?.cardName
 
-  const listCards = listItems.map((item: ItemContent) => <div className="price-item" key={item.name}><p>{item.name} – {item.price}🪙</p><hr /></div>)
+  const listCardsNames = listItems.map((item: ItemContent) => <div className="price-item" key={item.name}><p>{item.name}</p></div>)
+
+  const listCardsPrices =  listItems.map((item: ItemContent) => <div className="price-item" key={item.name}><p>{item.price}🪙</p></div>)
+
+
   return (
     <div className="card">
-      <h6 className="card-header">{listHeader}</h6>
-      {listCards}
+      <div className="card-image">
+        <img src="images\cat-about.jpg" alt="card photo" />
+      </div>
+      <div className="card-header">
+        <h6 className="card-header__text">{listHeader}</h6>
+      </div>
+      <div className="card-content">
+        <div className="card-content__names">
+          {listCardsNames}
+        </div>
+        <div className="card-content__prices">
+          {listCardsPrices}
+        </div>
+      </div>
     </div>
   )
 }
