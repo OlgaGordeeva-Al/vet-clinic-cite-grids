@@ -25,14 +25,14 @@ const CardList = (props: CardProps) => {
 
 
   return (
-    <div className="card">
-      <div className="card-image">
+    <div className="list-card">
+      <div className="list-card-image">
         <img src="images\cat-about.jpg" alt="card photo" />
       </div>
-      <div className="card-header">
+      <div className="list-card-header">
         <h6 className="card-header__text">{listHeader}</h6>
       </div>
-      <div className="card-content">
+      <div className="list-card-content">
         <div className="card-content__names">
           {listCardsNames}
         </div>
