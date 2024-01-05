@@ -36,7 +36,7 @@
 
 .card-content {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
   grid-gap: 30px;
   justify-content: center;
@@ -45,14 +45,17 @@
 }
 
 .card-content__names {
+  display: grid;
 }
 
 .card-content__prices {
+  display: grid;
   padding-left: 30px;
   border-left: 1px solid var(--blue);
 }
 
 .price-item {
   width: 100%;
-  margin-top: 10px;
+  height: fit-content;
+  margin: 0;
 }
