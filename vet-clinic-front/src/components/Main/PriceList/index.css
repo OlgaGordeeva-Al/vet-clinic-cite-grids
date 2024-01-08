@@ -17,3 +17,11 @@
   grid-template-rows: auto;
   grid-gap: 40px;
 }
+
+.horizontal-pricelist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 30px;
+  margin-top: 60px;
+}
