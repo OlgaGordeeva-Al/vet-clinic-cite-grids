@@ -1,6 +1,7 @@
 const priceList = [
   {
     cardName: "Therapy",
+    cardImage: "images/close-up-veterinarian-taking-care-dog_23-2149100178.jpg",
     values : [
       {
         name: "Online consultation",
@@ -42,6 +43,7 @@ const priceList = [
   },
   {
     cardName: "Surgery",
+    cardImage: "images/surgeons-standing-patient-before-surgery-multiethnic-healthcare-workers-performing-surgery-patient-operation-theater_657921-773.jpg",
     values: [
       {
         name: "Sterilisation",
@@ -71,6 +73,7 @@ const priceList = [
   },
   {
     cardName: "Opthalmology",
+    cardImage: "images/cute-dog-wearing-glasses_23-2148917262.jpg",
     values :  [
       {
         name: "Physical Exams",
@@ -88,6 +91,7 @@ const priceList = [
   },
   {
     cardName: "Laboratory",
+    cardImage: "images/medical-test-tubes-with-blood-desk-laboratory_482257-9074.jpg",
     values : [
       {
         name: "Сomplete blood count",
@@ -126,7 +130,7 @@ const priceList = [
         price: 50
       },
       {
-        name: "Vitamind",
+        name: "Vitamin D",
         price: 70
       }
     ]

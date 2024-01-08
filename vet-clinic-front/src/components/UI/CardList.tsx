@@ -6,6 +6,7 @@ interface CardProps {
 
 interface CardItem {
   cardName: string
+  cardImage: string
   values: ItemContent[],
 }
 
@@ -16,21 +17,20 @@ interface ItemContent {
 
 
 const CardList = (props: CardProps) => {
-  const listItems = props.cardContent?.values
-  const listHeader = props.cardContent?.cardName
+  const {values, cardName, cardImage} = props.cardContent
 
-  const listCardsNames = listItems.map((item: ItemContent) => <div className="price-item" key={item.name}><p>{item.name}</p></div>)
+  const listCardsNames = values.map((item: ItemContent) => <div className="price-item" key={item.name}><p>{item.name}</p></div>)
 
-  const listCardsPrices =  listItems.map((item: ItemContent) => <div className="price-item" key={item.name}><p>{item.price}🪙</p></div>)
+  const listCardsPrices =  values.map((item: ItemContent) => <div className="price-item" key={item.name}><p>{item.price}🪙</p></div>)
 
 
   return (
     <div className="list-card">
       <div className="list-card-image">
-        <img src="images\cat-about.jpg" alt="card photo" />
+        <img src={cardImage} alt="card photo" />
       </div>
       <div className="list-card-header">
-        <h6 className="card-header__text">{listHeader}</h6>
+        <h6 className="card-header__text">{cardName}</h6>
       </div>
       <div className="list-card-content">
         <div className="card-content__names">

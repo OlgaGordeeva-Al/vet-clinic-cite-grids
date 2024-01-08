@@ -9,7 +9,8 @@ interface Values {
 
 interface Prices {
   cardName: string,
-  values : Values[]
+  values : Values[],
+  cardImage: string
 }
 
 const PriceList = () => {

@@ -1,15 +1,19 @@
 .price-page {
-  margin: 0 140px;
+  margin: 0 70px;
+  margin-bottom: 70px;
 }
 
 .price-page__header {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
+  font-size: 48px;
+  font-weight: 200;
 }
 
 .price-page__content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   grid-template-rows: auto;
-  grid-gap: 30px;
+  grid-gap: 40px;
 }

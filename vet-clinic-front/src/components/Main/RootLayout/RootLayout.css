@@ -6,7 +6,7 @@
     "header header"
     "main main"
     "footer footer";
-  grid-template-rows: 60px 1fr 150px;
+  grid-template-rows: 70px 1fr 150px;
   grid-template-columns: 150px 1fr;
   font-size: 18px;
 }
@@ -14,7 +14,7 @@
 .main {
   grid-area: main;
   background-color: var(--white);
-  padding: 40px 30px;
+  padding: 60px 80px;
   height: max-content;
 }
 
