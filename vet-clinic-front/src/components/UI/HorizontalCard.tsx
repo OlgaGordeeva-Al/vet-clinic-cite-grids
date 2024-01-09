@@ -19,7 +19,7 @@ interface ItemContent {
 const HorizontalCard = (props: CardProps) => {
   const {values, cardName, cardImage} = props.cardContent
 
-  const listCards = values.map((item: ItemContent) => <div className="price-item" key={item.name}><p>{item.name}-{item.price}🪙</p></div>)
+  const listCards = values.map((item: ItemContent) => <div className="horizontal-price-item" key={item.name}><p>{item.name} - {item.price}🪙</p></div>)
 
 
   return (

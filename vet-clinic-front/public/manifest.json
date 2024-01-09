@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "VetPet",
+  "name": "Veterinary clinic VetPet",
   "icons": [
     {
       "src": "favicon.ico",
