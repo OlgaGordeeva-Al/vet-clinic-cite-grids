@@ -11,7 +11,7 @@
 
 .horizontal-list-card-image {
   display: flex;
-  border-radius: 0 30% 30% 0;
+  border-radius: 0 60% 10% 0;
   overflow: hidden;
 }
 

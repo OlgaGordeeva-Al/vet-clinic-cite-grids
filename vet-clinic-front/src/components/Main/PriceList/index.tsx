@@ -1,5 +1,6 @@
 import CardList from "../../UI/CardList";
 import HorizontalCard from "../../UI/HorizontalCard"
+import BackbroundCardList from "../../UI/BackgroundCardList"
 import "./index.css";
 import { useState, useEffect } from "react";
 
@@ -32,19 +33,23 @@ const PriceList = () => {
   fetchData();
   }, []);
 
-const PricePage = prices.map((item) => <CardList cardContent={item} key={item.cardName + item.values.length} />)
+const PricePage = prices.map((item) => <CardList cardContent={item} key={item.cardName + item.values.length} />);
 
-const PricePageHorisontal = prices.map((item) => <HorizontalCard cardContent={item} key={item.cardName + item.values.length} />)
+const PricePageHorisontal = prices.map((item) => <HorizontalCard cardContent={item} key={item.cardName + item.values.length} />);
 
+const BackgroundPriceList = prices.map((item) => <BackbroundCardList cardContent={item} key={item.cardName + item.values.length} />);
 
   return (
     <div className="price-page">
       <h4 className="page-header price-page__header">Our prices</h4>
-      <div className="price-page__content">
+      {/* <div className="price-page__content">
         {PricePage}
       </div>
       <div className="horizontal-pricelist">
         {PricePageHorisontal}
+      </div> */}
+      <div className="price-page__content">
+        {BackgroundPriceList}
       </div>
     </div>
   )
