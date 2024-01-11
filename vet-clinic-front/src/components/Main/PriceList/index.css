@@ -25,3 +25,13 @@
   grid-gap: 30px;
   margin-top: 60px;
 }
+
+.background-pricelist {
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff84,
+    #ffffff7d
+  ), url("../../../../public/images/pastel-paws-hearts-pattern-background-pets_654662-186.jpg");
+}
