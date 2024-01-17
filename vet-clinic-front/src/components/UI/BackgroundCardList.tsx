@@ -18,7 +18,9 @@ interface ItemContent {
 const BackgroundCardList = (props: CardProps) => {
   const {values, cardName} = props.cardContent
 
-  const listCards = values.map((item: ItemContent) => <div className="background-price-item" key={item.name}><p>{item.name} - {item.price}🪙</p></div>)
+  const listCardsNames = values.map((item: ItemContent) => <div className="price-item" key={item.name}><p>{item.name}</p></div>)
+
+  const listCardsPrices =  values.map((item: ItemContent) => <div className="price-item" key={item.name}><p>{item.price} 🪙</p></div>)
 
 
   return (
@@ -28,7 +30,12 @@ const BackgroundCardList = (props: CardProps) => {
           <h6 className="background-card-header__text">{cardName}</h6>
         </div>
         <div className="background-card-content__items">
-          {listCards}
+          <div className="background-card-content__names">
+            {listCardsNames}
+          </div>
+          <div className="background-card-content__prices">
+            {listCardsPrices}
+          </div>
         </div>
       </div>
     </div>

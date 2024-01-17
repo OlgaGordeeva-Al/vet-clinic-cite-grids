@@ -42,12 +42,12 @@ const BackgroundPriceList = prices.map((item) => <BackbroundCardList cardContent
   return (
     <div className="price-page">
       <h4 className="page-header price-page__header">Our prices</h4>
-      {/* <div className="price-page__content">
+      <div className="price-page__content">
         {PricePage}
       </div>
       <div className="horizontal-pricelist">
         {PricePageHorisontal}
-      </div> */}
+      </div>
       <div className="background-pricelist">
         {BackgroundPriceList}
       </div>

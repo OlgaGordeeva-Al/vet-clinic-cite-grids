@@ -27,8 +27,7 @@
 }
 
 .background-pricelist {
-  display: grid;
-  place-items: center;
+  margin: 50px 0;
   background-image: linear-gradient(
     to bottom,
     #ffffff84,
